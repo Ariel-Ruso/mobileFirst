@@ -1,0 +1,126 @@
+                /* fuentes */
+                
+                @font-face {
+                    font-family: "STARWARS";
+                    src: url("./assets/STARWARS.eot") format("eot"), url("./assets/STARWARS.woff") format("woff"), url("./assets/STARWARS.ttf") format("truetype"), url("./assets/STARWARS.svg") format("svg");
+                    font-size: normal;
+                    font-weight: normal;
+                }
+                
+                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+                /* colores */
+                
+                 :root {
+                    --main-dark-color: #354d1c;
+                    --main-blank-color: #b7d796;
+                    --main-green-color: #64b412;
+                }
+                /* resets */
+                
+                * {
+                    margin: 0;
+                    padding: 1%;
+                }
+                
+                body {
+                    background-color: var(--main-blank-color);
+                    color: var(--main-green-color);
+                }
+                
+                h1 {
+                    font-family: 'STARWARS';
+                    font-size: 1.5em;
+                }
+                
+                p,
+                li,
+                button {
+                    font-family: 'Oswald';
+                }
+                
+                header {
+                    display: flex;
+                    align-content: space-between;
+                    background-color: var(--main-dark-color);
+                    padding: 8%;
+                    margin: -2%;
+                }
+                
+                header a {
+                    text-decoration: none;
+                    color: var(--main-blank-color);
+                    font-size: 1.7em;
+                }
+                
+                .menu {
+                    position: relative;
+                    display: inline-block;
+                    margin-left: auto;
+                }
+                
+                .menu:hover .dropdown {
+                    display: block;
+                }
+                
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    min-width: 160px;
+                    padding: 12px 16px;
+                    z-index: 9;
+                    top: 35px;
+                    right: -30px;
+                }
+                
+                .dropdown li {
+                    list-style-type: none;
+                }
+                
+                img {
+                    width: 70%;
+                }
+                
+                .product {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10% 0;
+                }
+                /* padre relativo */
+                
+                .imgContainer {
+                    position: relative;
+                }
+                /* hijo absolute */
+                
+                .imgContainer .heart {
+                    position: absolute;
+                }
+                
+                .myButton {
+                    box-shadow: 0px 1px 0px 0px #fff6af;
+                    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+                    background-color: #ffec64;
+                    border-radius: 6px;
+                    border: 1px solid #ffaa22;
+                    display: inline-block;
+                    cursor: pointer;
+                    color: #333333;
+                    font-family: Arial;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 6px 24px;
+                    text-decoration: none;
+                    text-shadow: 0px 1px 0px #ffee66;
+                }
+                
+                .myButton:hover {
+                    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+                    background-color: #ffab23;
+                }
+                
+                .myButton:active {
+                    position: relative;
+                    top: 1px;
+                }
